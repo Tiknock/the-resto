@@ -30,6 +30,9 @@ footer {
                 color:white;
                 padding: 10px;
                 font-family: $font3;
+                @media screen and(max-width: 400px) {
+                    font-size: 1rem;
+                }  
             }
             input {
                 color:$grey1;
@@ -49,6 +52,9 @@ footer {
                     justify-content: space-around;
                     color: $grey1;
                     margin: 0 auto;
+                    @media screen and(max-width: 550px) {
+                        width: 50%;
+                    }  
                     li {
                         &:hover {
                             transform: scale(1.2);

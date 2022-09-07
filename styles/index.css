@@ -22,7 +22,7 @@
   color: rgb(166, 114, 69);
   font-size: 2.5rem;
   padding-bottom: 0;
-  line-height: 0.4rem;
+  line-height: 1rem;
 }
 
 header {
@@ -286,6 +286,11 @@ main .menu .menu1 .menu-container {
     width: 80%;
   }
 }
+@media screen and (max-width: 400px) {
+  main .menu .menu1 .menu-container {
+    width: 90%;
+  }
+}
 @media screen and (max-width: 800px) {
   main .menu .menu1 .menu-container {
     display: block;
@@ -317,9 +322,21 @@ main .menu .menu1 .menu-container > div .menu-text h4 {
   font-family: roboto, sans-serif;
   font-size: 0.9rem;
 }
+@media screen and (max-width: 400px) {
+  main .menu .menu1 .menu-container > div .menu-text h4 {
+    font-size: 0.8rem;
+    padding-left: 10px;
+  }
+}
 main .menu .menu1 .menu-container > div .menu-text p {
   font-size: 0.9rem;
   padding-top: 5px;
+}
+@media screen and (max-width: 400px) {
+  main .menu .menu1 .menu-container > div .menu-text p {
+    font-size: 0.8rem;
+    padding-left: 10px;
+  }
 }
 main .menu .menu1 .menu-container > div span {
   display: flex;
@@ -366,11 +383,18 @@ main .booking .booking-container {
   }
 }
 main .booking .booking-container .contact-dotted {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   padding: 25px;
   height: 75%;
   background-color: black;
 }
 main .booking .booking-container .contact-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
   height: 100%;
   padding: 25px;
   border: 1px dotted rgb(237, 238, 235);
@@ -388,6 +412,8 @@ main .booking .booking-container .contact-container h4 {
   text-transform: uppercase;
   font-family: roboto, sans-serif;
   color: rgb(166, 114, 69);
+}
+main .booking .booking-container .contact-container h4:not(h4:nthchild(3)) {
   padding-bottom: 15px;
 }
 main .booking .booking-container .contact-container img {
@@ -669,6 +695,18 @@ main .citation .citation-container p {
   line-height: 1.8rem;
   font-family: roboto, sans-serif;
 }
+@media screen and (max-width: 500px) {
+  main .citation .citation-container p {
+    width: 90%;
+    font-size: 1rem;
+  }
+}
+@media screen and (max-width: 420px) {
+  main .citation .citation-container p {
+    width: 90%;
+    font-size: 0.9rem;
+  }
+}
 main .citation .citation-container h3 {
   padding: 30px;
   font-family: roboto, sans-serif;
@@ -721,6 +759,11 @@ footer .footer-container .footer-contact h5 {
   padding: 10px;
   font-family: roboto, sans-serif;
 }
+@media screen and (max-width: 400px) {
+  footer .footer-container .footer-contact h5 {
+    font-size: 1rem;
+  }
+}
 footer .footer-container .footer-contact input {
   color: rgb(167, 167, 167);
   background: none;
@@ -740,6 +783,11 @@ footer .footer-container .footer-contact .follow ul {
   justify-content: space-around;
   color: rgb(167, 167, 167);
   margin: 0 auto;
+}
+@media screen and (max-width: 550px) {
+  footer .footer-container .footer-contact .follow ul {
+    width: 50%;
+  }
 }
 footer .footer-container .footer-contact .follow ul li:hover {
   transform: scale(1.2);
