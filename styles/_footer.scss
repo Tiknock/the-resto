@@ -13,6 +13,9 @@ footer {
         grid-template-columns: 1fr 1fr;
         .resto {
             padding: 40px 30px 40px 0;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
             p {
                 color:$grey1;
                 line-height: 1.5rem;

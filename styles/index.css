@@ -737,6 +737,9 @@ footer .footer-container {
 }
 footer .footer-container .resto {
   padding: 40px 30px 40px 0;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
 footer .footer-container .resto p {
   color: rgb(167, 167, 167);
