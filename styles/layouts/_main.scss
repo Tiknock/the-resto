@@ -45,7 +45,7 @@ main {
             }
         }
         .store-img {
-            background: url(../../assets/img/dish-gallery-01.jpg) center/cover;
+            background: url(../../img/dish-gallery-01.jpg) center/cover;
             @media screen and(max-width: 700px) {
                 display: none;
             }
@@ -164,7 +164,7 @@ main {
             content:'';
             height: 60%;
             width: 100%;
-            background: url(../../assets/img/bg-menu-01.jpg) center/cover;
+            background: url(../../img/bg-menu-01.jpg) center/cover;
             bottom: 0;
             z-index: -1;
         }
@@ -382,18 +382,18 @@ main {
             #NIP {
                 grid-area: NIP;
                 .event-img {
-                    background: url(../../assets/img/event-01.jpg) center/cover;
+                    background: url(../../img/event-01.jpg) center/cover;
                 }
             }
             #DRR {
                 grid-area: DRR;
                 .event-img {
-                    background: url(../../assets/img/event-02.jpg) center/cover;
+                    background: url(../../img/event-02.jpg) center/cover;
                 }
             }
             #TCAJN {
                 grid-area: TCAJN;
-                background: url(../../assets/img/event-03.jpg) center/cover;
+                background: url(../../img/event-03.jpg) center/cover;
                 .event-infos {
                     height: 85%;
                     margin: 20px;
@@ -434,7 +434,7 @@ main {
             content:'';
             height: 70%;
             width: 100%;
-            background: url(../../assets/img/gmap.jpg) center/cover;
+            background: url(../../img/gmap.jpg) center/cover;
             bottom: 0;
             z-index: -1;
         }

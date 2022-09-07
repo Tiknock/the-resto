@@ -26,7 +26,7 @@
 }
 
 header {
-  background: url(../assets/img/bg-vegan.jpg) center/cover;
+  background: url(../../img/bg-vegan.jpg) center/cover;
   height: 100vh;
 }
 header nav {
@@ -218,7 +218,7 @@ main .store .store-container div #chef {
   color: rgb(167, 167, 167);
 }
 main .store .store-img {
-  background: url(../assets/img/dish-gallery-01.jpg) center/cover;
+  background: url(../../img/dish-gallery-01.jpg) center/cover;
 }
 @media screen and (max-width: 700px) {
   main .store .store-img {
@@ -343,7 +343,7 @@ main .menu::after {
   content: "";
   height: 60%;
   width: 100%;
-  background: url(../assets/img/bg-menu-01.jpg) center/cover;
+  background: url(../../img/bg-menu-01.jpg) center/cover;
   bottom: 0;
   z-index: -1;
 }
@@ -582,17 +582,17 @@ main .event .event-container #NIP {
   grid-area: NIP;
 }
 main .event .event-container #NIP .event-img {
-  background: url(../assets/img/event-01.jpg) center/cover;
+  background: url(../../img/event-01.jpg) center/cover;
 }
 main .event .event-container #DRR {
   grid-area: DRR;
 }
 main .event .event-container #DRR .event-img {
-  background: url(../assets/img/event-02.jpg) center/cover;
+  background: url(../../img/event-02.jpg) center/cover;
 }
 main .event .event-container #TCAJN {
   grid-area: TCAJN;
-  background: url(../assets/img/event-03.jpg) center/cover;
+  background: url(../../img/event-03.jpg) center/cover;
 }
 main .event .event-container #TCAJN .event-infos {
   height: 85%;
@@ -635,7 +635,7 @@ main .citation::after {
   content: "";
   height: 70%;
   width: 100%;
-  background: url(../assets/img/gmap.jpg) center/cover;
+  background: url(../../img/gmap.jpg) center/cover;
   bottom: 0;
   z-index: -1;
 }
@@ -679,7 +679,7 @@ main .citation .citation-container span {
 }
 
 footer {
-  background: url(../assets/img/bg-footer.jpg) center/cover;
+  background: url(../../img/bg-footer.jpg) center/cover;
 }
 @media screen and (max-width: 800px) {
   footer {
