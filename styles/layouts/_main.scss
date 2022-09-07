@@ -1,0 +1,481 @@
+main {
+
+    .store {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        @media screen and(max-width: 700px) {
+            display: block;
+        }
+        .store-container {
+            @include center;
+            flex-direction: column;
+            div {
+                @include center;
+                flex-direction: column;
+                margin: 20px;
+                padding: 30px 10px;
+                border: 1px dotted $or;
+                text-align: center;
+                h2 {
+                    @include title;
+                    font-family: $font2;
+                }
+                img {
+                    padding: 25px
+                }
+                p {
+                    font-family: $font3;
+                    color: $greyback;
+                    font-size: 0.95rem;
+                }
+                #avatar-01 {
+                    height: 125px;
+                    border-radius: 50%;
+                }
+                h3 {
+                    font-family: $font2;
+                    font-size: 1rem;
+                    padding-bottom: 3px;
+                }
+                #chef {
+                    text-transform: uppercase;
+                    font-size: 0.8rem;
+                    color: $grey1;
+                }
+            }
+        }
+        .store-img {
+            background: url(../../assets/img/dish-gallery-01.jpg) center/cover;
+            @media screen and(max-width: 700px) {
+                display: none;
+            }
+        }
+    }
+
+    .menu {
+
+
+        .menu1 {
+            // background-color: $greyback;
+            padding: 60px 0;
+
+            .menu-nav {
+                @include center;
+                flex-direction: column;
+                width: 60%;
+                margin: 0 auto;
+                padding-bottom: 40px;
+                @media screen and(max-width: 1100px) {
+                    width: 80%;
+                }
+                img {
+                    padding: 30px;
+                }
+                nav {
+                    width: 100%;
+                }
+                ul {
+                    display: flex;
+                    justify-content: space-around;
+                    width: 100%;
+                    margin: 0 auto;
+                    li {
+                        color: $white1;
+                        text-transform: capitalize;
+                        font-family: $font3;
+                        padding: 10px 0;
+                        border-bottom: 1px solid $white1;
+                        &:hover {
+                            cursor: pointer;
+                            transform:perspective(2);
+                            transition: all 0.5s ease;
+                            color: $or;
+                            border-bottom: 1px solid $or;
+                        }
+                    }
+                }
+            }
+
+
+        
+            .menu-container {
+                background-color: $white1;
+                border-top: 4px solid $or;
+                width: 60%;
+                margin: 0 auto;
+                padding: 10px 0;
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                z-index: 0;
+                @media screen and(max-width: 1100px) {
+                    width: 80%;
+                }            
+                @media screen and(max-width: 800px) {
+                    display: block;
+                }
+                > div {
+                    display: grid;
+                    grid-template-columns: 30% 55% 1fr;
+                    padding: 30px 0;
+                    margin: 0 20px;
+                    border-bottom: 1px dotted $greyback;
+                    img {
+                        border-radius: 50%;
+                        @include center;
+                        height: 90%;
+                    }
+                    .menu-text {
+                        color: $greyback;
+                        display: flex;
+                        justify-content: center;
+                        flex-direction: column;
+                        font-family: $font3;
+                        h4 {
+                            @include title;
+                            font-size: 0.9rem;
+                        }
+                        p {
+                            font-size: 0.9rem;
+                            padding-top: 5px;
+                        }
+                    }
+                    span {
+                        @include center;
+                        color: $or;
+                        font-family: $font3;
+                        font-size: 1.1rem;
+                    }
+                }
+            }
+
+        }
+        position: relative;
+        &::before {
+            position: absolute;
+            content:'';
+            height: 40%;
+            width: 100%;
+            background-color: $greyback;
+            top: 0;
+            z-index: -1;
+        }
+        &::after {
+            position: absolute;
+            content:'';
+            height: 60%;
+            width: 100%;
+            background: url(../../assets/img/bg-menu-01.jpg) center/cover;
+            bottom: 0;
+            z-index: -1;
+        }
+    }
+
+    .booking {
+        background: $greyback;
+        .booking-container {
+            height: 100vh;
+            width: 75%;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 30% 70%;
+            align-items: center;
+            justify-content: center;
+            @media screen and(max-width: 1200px) {
+                display: block;
+                height: 100%;
+            }
+            .contact-dotted {
+                padding: 25px;
+                height: 75%;
+                background-color: black;
+            }
+            .contact-container {
+                height: 100%;
+                padding: 25px;
+                border: 1px dotted $white1;
+                text-align: center;
+                color: $white1;
+                font-family: $font3;
+                h3 {
+                    @include title;
+                    color: $white1;
+                    letter-spacing: 0.2rem;
+                }
+                h4 {
+                    @include title;
+                    color: $or;
+                    padding-bottom: 15px;
+                }
+                img {
+                    padding: 30px;
+                }
+                div {
+                    padding: 20px;
+                    span {
+                        font-size: 0.7rem;
+                    }
+                }
+            }
+
+
+            .reservation-container {
+                height: 75%;
+                @media screen and(max-width: 1200px) {
+                    height:80vh;
+                }
+                background: $white1;
+                @include center;
+                flex-direction: column;
+                div {
+                    @include center;
+                    flex-direction: column;
+                    h3 {
+                        @include title;
+                        font-family: $font2;
+                        font-size: 1.8rem;
+                    }
+                    img {
+                        padding: 30px;
+                        @media screen and(max-width: 1200px) {
+                            padding: 10px;
+                        }
+                    }
+                }
+                form {
+                    .form-container {
+                        display: grid;
+                        @media screen and(max-width: 1000px) {
+                            display: block;
+                        }
+                        grid-template-columns: 1fr 1fr 1fr;
+                        grid-template-rows: 1fr 1fr;
+                        gap: 20px;
+                        padding: 40px;
+                        input {
+                            border: none;
+                            padding: 7px;
+                            border-bottom: 1px solid $grey2;
+                            color: $grey2;
+                            @media screen and(max-width: 1000px) {
+                                width: 90%;
+                            }
+                        }
+                    }
+                    button {
+                        margin: 0 auto;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        text-align: center;
+                        color: $white1;
+                        font-family: $font2;
+                        text-transform: uppercase;
+                        letter-spacing: 0.2rem;
+                        background-color: black;
+                        padding: 10px 20px;
+                        border-radius: 30px;
+                        transition: all 0.3s ease-in-out;
+                        @media screen and(max-width: 1200px) {
+                            margin-bottom: 30px;
+                        }
+                        &:hover {
+                                border-color: $greyback;
+                                color: $greyback;
+                                background-color: $white1;
+                                cursor: pointer;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+
+    .event {
+        height: 90vh;
+        background: $greyback;
+        @media screen and(max-width: 1200px) {
+            padding-top: 50px;;
+        }
+        @media screen and(max-width: 800px) {
+            display: none;
+        }
+        .event-presentation {
+            display: block;
+            align-items: center;
+            text-align: center;
+            padding: 40px;
+            span {
+                @include or;
+                margin: 10px;
+                width: 100%;
+            }
+            h3 {
+                @include title;
+                color: $white1;
+                padding-top: 8px;
+                font-size: 1.5rem;
+                font-family: $font2;
+            }
+            img {
+                padding: 20px;
+            }
+        }
+        .event-container {
+            height: 50%;
+            width: 65%;
+            padding: 0 0 30px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 65% 35%;
+            grid-template-areas: 
+            "NIP TCAJN"
+            "DRR TCAJN";
+            gap: 15px;
+            div {
+                background-color: $white1;
+            }
+            span {
+                padding: 10px;
+                color: $white1;
+                background-color: $greyback;
+                width: 60px;
+                height: 60px;
+                @include center;
+                text-align: center;
+                font-family: $font3;
+            }
+            .event1 {
+                display: grid;
+                grid-template-columns: 35% 65%;
+            }
+            .event-infos {
+                padding: 5px 20px;
+                display: flex;
+                text-align: left;
+                justify-content: center;
+                flex-direction: column;
+                font-family: $font3;
+                h5 {
+                    letter-spacing: 0.1rem;
+                    padding: 20px 0;
+                    color: $greyback;
+                    font-size: 1.1rem;
+                }
+                p {
+                    color: $grey1;
+                    font-size: 0.8rem;
+                    letter-spacing: 0.05rem;
+                }
+                a {
+                    text-decoration: none;
+                    color: $greyback;
+                    padding: 20px 0;
+                    font-size: 0.8rem;
+                    letter-spacing: 0.1rem;
+                    &:hover{
+                        color: $or;
+                        transform: translateX(2px);
+                    }
+                }
+            }
+            #NIP {
+                grid-area: NIP;
+                .event-img {
+                    background: url(../../assets/img/event-01.jpg) center/cover;
+                }
+            }
+            #DRR {
+                grid-area: DRR;
+                .event-img {
+                    background: url(../../assets/img/event-02.jpg) center/cover;
+                }
+            }
+            #TCAJN {
+                grid-area: TCAJN;
+                background: url(../../assets/img/event-03.jpg) center/cover;
+                .event-infos {
+                    height: 85%;
+                    margin: 20px;
+                    justify-content: center;
+                    align-items: center;
+                    h5 {
+                        text-align: center;
+                    }
+                    span {
+                        align-items: center;
+                        margin: 0 auto;
+                    }
+                }
+            }   
+            .event-img {
+                @include center;   
+            }
+        }
+    }
+
+    .citation {
+        height: 100vh;
+        position: relative;
+        @media screen and(max-width: 800px) {
+            padding-top: 200px;
+        }
+        &::before {
+            position: absolute;
+            content:'';
+            height: 30%;
+            width: 100%;
+            background-color: $greyback;
+            top: 0;
+            z-index: -1;
+        }
+        &::after {
+            position: absolute;
+            content:'';
+            height: 70%;
+            width: 100%;
+            background: url(../../assets/img/gmap.jpg) center/cover;
+            bottom: 0;
+            z-index: -1;
+        }
+        .citation-container {
+            position: relative;
+            height: 55%;
+            width: 85%;
+            margin: 0 auto;
+            background: $white1;
+            @include center;
+            flex-direction: column;
+            text-align: center;
+            @media screen and(max-width: 800px) {
+                height: 80%;
+            }
+            img {
+                position: absolute;
+                height: 75px;
+                border-radius: 50%;
+                left: 50%;
+                transform: translateX(-50%);
+                top:-36px;
+            }
+            p {
+                width: 80%;
+                line-height: 1.8rem;
+                font-family: $font3;
+            }
+            h3 {
+                padding: 30px;
+                font-family: $font3;
+                letter-spacing: 0.1rem;
+            }
+            span {
+                color: $or;
+            }
+        }
+    }
+
+
+
+
+
+}

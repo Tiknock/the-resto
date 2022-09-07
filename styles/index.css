@@ -1,0 +1,748 @@
+@font-face {
+  font-family: "allura";
+  src: url(../../fonts/Allura-Regular.ttf);
+}
+@font-face {
+  font-family: "poppins";
+  src: url(../../fonts/Poppins-Medium.ttf);
+}
+@font-face {
+  font-family: "roboto";
+  src: url(../../fonts/Roboto-Light.ttf);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+}
+
+.or {
+  font-family: allura, sans-serif;
+  color: rgb(166, 114, 69);
+  font-size: 2.5rem;
+  padding-bottom: 0;
+  line-height: 0.4rem;
+}
+
+header {
+  background: url(../../assets/img/bg-vegan.jpg) center/cover;
+  height: 100vh;
+}
+header nav {
+  height: 90px;
+  color: rgb(237, 238, 235);
+  display: flex;
+  align-items: center;
+  width: 85%;
+  margin: 0 auto;
+}
+header nav h2 {
+  width: 10%;
+  font-family: allura, sans-serif;
+  font-size: 2.5rem;
+  color: rgb(237, 238, 235);
+}
+@media screen and (max-width: 800px) {
+  header nav h2 {
+    width: 50%;
+  }
+}
+header nav ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 0.8rem;
+  font-family: roboto, sans-serif;
+}
+header nav ul a {
+  text-decoration: none;
+  color: rgb(237, 238, 235);
+}
+header nav ul a:hover {
+  color: rgb(166, 114, 69);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+header nav .navbar {
+  width: 80%;
+  text-transform: uppercase;
+  font-family: roboto, sans-serif;
+}
+@media screen and (max-width: 800px) {
+  header nav .navbar {
+    display: none;
+  }
+}
+header nav .contactlist {
+  width: 10%;
+}
+@media screen and (max-width: 800px) {
+  header nav .contactlist {
+    width: 50%;
+  }
+}
+header .header-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100%;
+  padding-bottom: 330px;
+}
+header .header-container h1 {
+  text-transform: uppercase;
+  font-family: roboto, sans-serif;
+  color: rgb(237, 238, 235);
+  font-size: 4rem;
+  letter-spacing: 0.5rem;
+  font-family: poppins, sans-serif;
+  -webkit-animation: animtitle 5s;
+          animation: animtitle 5s;
+}
+@media screen and (max-width: 700px) {
+  header .header-container h1 {
+    font-size: 3rem;
+  }
+}
+header .header-container img {
+  padding: 40px;
+}
+header .header-container p {
+  text-align: center;
+  text-transform: uppercase;
+  color: rgb(237, 238, 235);
+  letter-spacing: 0.2rem;
+  font-family: roboto, sans-serif;
+}
+@media screen and (max-width: 700px) {
+  header .header-container p {
+    width: 70%;
+  }
+}
+@-webkit-keyframes animtitle {
+  0% {
+    transform: translateY(-100px);
+  }
+  20% {
+    transform: translateY(0);
+  }
+  30% {
+    transform: rotateX(-48deg);
+    transform: translateY(-15px);
+  }
+  50% {
+    transform: translateY(0px);
+    transform: rotateX(-25deg);
+  }
+  80% {
+    transform: rotateX(0deg);
+  }
+  100% {
+    transform: rotateX(0deg);
+  }
+}
+@keyframes animtitle {
+  0% {
+    transform: translateY(-100px);
+  }
+  20% {
+    transform: translateY(0);
+  }
+  30% {
+    transform: rotateX(-48deg);
+    transform: translateY(-15px);
+  }
+  50% {
+    transform: translateY(0px);
+    transform: rotateX(-25deg);
+  }
+  80% {
+    transform: rotateX(0deg);
+  }
+  100% {
+    transform: rotateX(0deg);
+  }
+}
+
+main .store {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+@media screen and (max-width: 700px) {
+  main .store {
+    display: block;
+  }
+}
+main .store .store-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+main .store .store-container div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 20px;
+  padding: 30px 10px;
+  border: 1px dotted rgb(166, 114, 69);
+  text-align: center;
+}
+main .store .store-container div h2 {
+  text-transform: uppercase;
+  font-family: roboto, sans-serif;
+  font-family: poppins, sans-serif;
+}
+main .store .store-container div img {
+  padding: 25px;
+}
+main .store .store-container div p {
+  font-family: roboto, sans-serif;
+  color: rgb(33, 33, 31);
+  font-size: 0.95rem;
+}
+main .store .store-container div #avatar-01 {
+  height: 125px;
+  border-radius: 50%;
+}
+main .store .store-container div h3 {
+  font-family: poppins, sans-serif;
+  font-size: 1rem;
+  padding-bottom: 3px;
+}
+main .store .store-container div #chef {
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  color: rgb(167, 167, 167);
+}
+main .store .store-img {
+  background: url(../../assets/img/dish-gallery-01.jpg) center/cover;
+}
+@media screen and (max-width: 700px) {
+  main .store .store-img {
+    display: none;
+  }
+}
+main .menu {
+  position: relative;
+}
+main .menu .menu1 {
+  padding: 60px 0;
+}
+main .menu .menu1 .menu-nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 60%;
+  margin: 0 auto;
+  padding-bottom: 40px;
+}
+@media screen and (max-width: 1100px) {
+  main .menu .menu1 .menu-nav {
+    width: 80%;
+  }
+}
+main .menu .menu1 .menu-nav img {
+  padding: 30px;
+}
+main .menu .menu1 .menu-nav nav {
+  width: 100%;
+}
+main .menu .menu1 .menu-nav ul {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  margin: 0 auto;
+}
+main .menu .menu1 .menu-nav ul li {
+  color: rgb(237, 238, 235);
+  text-transform: capitalize;
+  font-family: roboto, sans-serif;
+  padding: 10px 0;
+  border-bottom: 1px solid rgb(237, 238, 235);
+}
+main .menu .menu1 .menu-nav ul li:hover {
+  cursor: pointer;
+  transform: perspective(2);
+  transition: all 0.5s ease;
+  color: rgb(166, 114, 69);
+  border-bottom: 1px solid rgb(166, 114, 69);
+}
+main .menu .menu1 .menu-container {
+  background-color: rgb(237, 238, 235);
+  border-top: 4px solid rgb(166, 114, 69);
+  width: 60%;
+  margin: 0 auto;
+  padding: 10px 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  z-index: 0;
+}
+@media screen and (max-width: 1100px) {
+  main .menu .menu1 .menu-container {
+    width: 80%;
+  }
+}
+@media screen and (max-width: 800px) {
+  main .menu .menu1 .menu-container {
+    display: block;
+  }
+}
+main .menu .menu1 .menu-container > div {
+  display: grid;
+  grid-template-columns: 30% 55% 1fr;
+  padding: 30px 0;
+  margin: 0 20px;
+  border-bottom: 1px dotted rgb(33, 33, 31);
+}
+main .menu .menu1 .menu-container > div img {
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 90%;
+}
+main .menu .menu1 .menu-container > div .menu-text {
+  color: rgb(33, 33, 31);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  font-family: roboto, sans-serif;
+}
+main .menu .menu1 .menu-container > div .menu-text h4 {
+  text-transform: uppercase;
+  font-family: roboto, sans-serif;
+  font-size: 0.9rem;
+}
+main .menu .menu1 .menu-container > div .menu-text p {
+  font-size: 0.9rem;
+  padding-top: 5px;
+}
+main .menu .menu1 .menu-container > div span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgb(166, 114, 69);
+  font-family: roboto, sans-serif;
+  font-size: 1.1rem;
+}
+main .menu::before {
+  position: absolute;
+  content: "";
+  height: 40%;
+  width: 100%;
+  background-color: rgb(33, 33, 31);
+  top: 0;
+  z-index: -1;
+}
+main .menu::after {
+  position: absolute;
+  content: "";
+  height: 60%;
+  width: 100%;
+  background: url(../../assets/img/bg-menu-01.jpg) center/cover;
+  bottom: 0;
+  z-index: -1;
+}
+main .booking {
+  background: rgb(33, 33, 31);
+}
+main .booking .booking-container {
+  height: 100vh;
+  width: 75%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 30% 70%;
+  align-items: center;
+  justify-content: center;
+}
+@media screen and (max-width: 1200px) {
+  main .booking .booking-container {
+    display: block;
+    height: 100%;
+  }
+}
+main .booking .booking-container .contact-dotted {
+  padding: 25px;
+  height: 75%;
+  background-color: black;
+}
+main .booking .booking-container .contact-container {
+  height: 100%;
+  padding: 25px;
+  border: 1px dotted rgb(237, 238, 235);
+  text-align: center;
+  color: rgb(237, 238, 235);
+  font-family: roboto, sans-serif;
+}
+main .booking .booking-container .contact-container h3 {
+  text-transform: uppercase;
+  font-family: roboto, sans-serif;
+  color: rgb(237, 238, 235);
+  letter-spacing: 0.2rem;
+}
+main .booking .booking-container .contact-container h4 {
+  text-transform: uppercase;
+  font-family: roboto, sans-serif;
+  color: rgb(166, 114, 69);
+  padding-bottom: 15px;
+}
+main .booking .booking-container .contact-container img {
+  padding: 30px;
+}
+main .booking .booking-container .contact-container div {
+  padding: 20px;
+}
+main .booking .booking-container .contact-container div span {
+  font-size: 0.7rem;
+}
+main .booking .booking-container .reservation-container {
+  height: 75%;
+  background: rgb(237, 238, 235);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+@media screen and (max-width: 1200px) {
+  main .booking .booking-container .reservation-container {
+    height: 80vh;
+  }
+}
+main .booking .booking-container .reservation-container div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+main .booking .booking-container .reservation-container div h3 {
+  text-transform: uppercase;
+  font-family: roboto, sans-serif;
+  font-family: poppins, sans-serif;
+  font-size: 1.8rem;
+}
+main .booking .booking-container .reservation-container div img {
+  padding: 30px;
+}
+@media screen and (max-width: 1200px) {
+  main .booking .booking-container .reservation-container div img {
+    padding: 10px;
+  }
+}
+main .booking .booking-container .reservation-container form .form-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 20px;
+  padding: 40px;
+}
+@media screen and (max-width: 1000px) {
+  main .booking .booking-container .reservation-container form .form-container {
+    display: block;
+  }
+}
+main .booking .booking-container .reservation-container form .form-container input {
+  border: none;
+  padding: 7px;
+  border-bottom: 1px solid rgb(150, 150, 150);
+  color: rgb(150, 150, 150);
+}
+@media screen and (max-width: 1000px) {
+  main .booking .booking-container .reservation-container form .form-container input {
+    width: 90%;
+  }
+}
+main .booking .booking-container .reservation-container form button {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: rgb(237, 238, 235);
+  font-family: poppins, sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  background-color: black;
+  padding: 10px 20px;
+  border-radius: 30px;
+  transition: all 0.3s ease-in-out;
+}
+@media screen and (max-width: 1200px) {
+  main .booking .booking-container .reservation-container form button {
+    margin-bottom: 30px;
+  }
+}
+main .booking .booking-container .reservation-container form button:hover {
+  border-color: rgb(33, 33, 31);
+  color: rgb(33, 33, 31);
+  background-color: rgb(237, 238, 235);
+  cursor: pointer;
+}
+main .event {
+  height: 90vh;
+  background: rgb(33, 33, 31);
+}
+@media screen and (max-width: 1200px) {
+  main .event {
+    padding-top: 50px;
+  }
+}
+@media screen and (max-width: 800px) {
+  main .event {
+    display: none;
+  }
+}
+main .event .event-presentation {
+  display: block;
+  align-items: center;
+  text-align: center;
+  padding: 40px;
+}
+main .event .event-presentation span {
+  font-family: allura, sans-serif;
+  color: rgb(166, 114, 69);
+  font-size: 2.5rem;
+  margin: 10px;
+  width: 100%;
+}
+main .event .event-presentation h3 {
+  text-transform: uppercase;
+  font-family: roboto, sans-serif;
+  color: rgb(237, 238, 235);
+  padding-top: 8px;
+  font-size: 1.5rem;
+  font-family: poppins, sans-serif;
+}
+main .event .event-presentation img {
+  padding: 20px;
+}
+main .event .event-container {
+  height: 50%;
+  width: 65%;
+  padding: 0 0 30px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 65% 35%;
+  grid-template-areas: "NIP TCAJN" "DRR TCAJN";
+  gap: 15px;
+}
+main .event .event-container div {
+  background-color: rgb(237, 238, 235);
+}
+main .event .event-container span {
+  padding: 10px;
+  color: rgb(237, 238, 235);
+  background-color: rgb(33, 33, 31);
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-family: roboto, sans-serif;
+}
+main .event .event-container .event1 {
+  display: grid;
+  grid-template-columns: 35% 65%;
+}
+main .event .event-container .event-infos {
+  padding: 5px 20px;
+  display: flex;
+  text-align: left;
+  justify-content: center;
+  flex-direction: column;
+  font-family: roboto, sans-serif;
+}
+main .event .event-container .event-infos h5 {
+  letter-spacing: 0.1rem;
+  padding: 20px 0;
+  color: rgb(33, 33, 31);
+  font-size: 1.1rem;
+}
+main .event .event-container .event-infos p {
+  color: rgb(167, 167, 167);
+  font-size: 0.8rem;
+  letter-spacing: 0.05rem;
+}
+main .event .event-container .event-infos a {
+  text-decoration: none;
+  color: rgb(33, 33, 31);
+  padding: 20px 0;
+  font-size: 0.8rem;
+  letter-spacing: 0.1rem;
+}
+main .event .event-container .event-infos a:hover {
+  color: rgb(166, 114, 69);
+  transform: translateX(2px);
+}
+main .event .event-container #NIP {
+  grid-area: NIP;
+}
+main .event .event-container #NIP .event-img {
+  background: url(../../assets/img/event-01.jpg) center/cover;
+}
+main .event .event-container #DRR {
+  grid-area: DRR;
+}
+main .event .event-container #DRR .event-img {
+  background: url(../../assets/img/event-02.jpg) center/cover;
+}
+main .event .event-container #TCAJN {
+  grid-area: TCAJN;
+  background: url(../../assets/img/event-03.jpg) center/cover;
+}
+main .event .event-container #TCAJN .event-infos {
+  height: 85%;
+  margin: 20px;
+  justify-content: center;
+  align-items: center;
+}
+main .event .event-container #TCAJN .event-infos h5 {
+  text-align: center;
+}
+main .event .event-container #TCAJN .event-infos span {
+  align-items: center;
+  margin: 0 auto;
+}
+main .event .event-container .event-img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+main .citation {
+  height: 100vh;
+  position: relative;
+}
+@media screen and (max-width: 800px) {
+  main .citation {
+    padding-top: 200px;
+  }
+}
+main .citation::before {
+  position: absolute;
+  content: "";
+  height: 30%;
+  width: 100%;
+  background-color: rgb(33, 33, 31);
+  top: 0;
+  z-index: -1;
+}
+main .citation::after {
+  position: absolute;
+  content: "";
+  height: 70%;
+  width: 100%;
+  background: url(../../assets/img/gmap.jpg) center/cover;
+  bottom: 0;
+  z-index: -1;
+}
+main .citation .citation-container {
+  position: relative;
+  height: 55%;
+  width: 85%;
+  margin: 0 auto;
+  background: rgb(237, 238, 235);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+@media screen and (max-width: 800px) {
+  main .citation .citation-container {
+    height: 80%;
+  }
+}
+main .citation .citation-container img {
+  position: absolute;
+  height: 75px;
+  border-radius: 50%;
+  left: 50%;
+  transform: translateX(-50%);
+  top: -36px;
+}
+main .citation .citation-container p {
+  width: 80%;
+  line-height: 1.8rem;
+  font-family: roboto, sans-serif;
+}
+main .citation .citation-container h3 {
+  padding: 30px;
+  font-family: roboto, sans-serif;
+  letter-spacing: 0.1rem;
+}
+main .citation .citation-container span {
+  color: rgb(166, 114, 69);
+}
+
+footer {
+  background: url(../../assets/img/bg-footer.jpg) center/cover;
+}
+@media screen and (max-width: 800px) {
+  footer {
+    background: rgb(33, 33, 31);
+  }
+}
+footer .footer-container {
+  width: 80%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+@media screen and (max-width: 800px) {
+  footer .footer-container {
+    display: block;
+  }
+}
+footer .footer-container .resto {
+  padding: 40px 30px 40px 0;
+}
+footer .footer-container .resto p {
+  color: rgb(167, 167, 167);
+  line-height: 1.5rem;
+  font-family: roboto, sans-serif;
+}
+@media screen and (max-width: 800px) {
+  footer .footer-container .resto {
+    display: none;
+  }
+}
+footer .footer-container .footer-contact {
+  padding: 40px 0px 40px 30px;
+}
+footer .footer-container .footer-contact h5 {
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  font-family: roboto, sans-serif;
+  color: white;
+  padding: 10px;
+  font-family: roboto, sans-serif;
+}
+footer .footer-container .footer-contact input {
+  color: rgb(167, 167, 167);
+  background: none;
+  padding: 5px 10px;
+  border: 1px solid rgb(50, 50, 50);
+}
+footer .footer-container .footer-contact .follow {
+  padding-top: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+}
+footer .footer-container .footer-contact .follow ul {
+  width: 70%;
+  display: flex;
+  justify-content: space-around;
+  color: rgb(167, 167, 167);
+  margin: 0 auto;
+}
+footer .footer-container .footer-contact .follow ul li:hover {
+  transform: scale(1.2);
+  transition: all 0.3s ease;
+  cursor: pointer;
+}/*# sourceMappingURL=index.css.map */
