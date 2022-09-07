@@ -1,14 +1,14 @@
 @font-face {
   font-family: "allura";
-  src: url(../../fonts/Allura-Regular.ttf);
+  src: url(../fonts/Allura-Regular.ttf);
 }
 @font-face {
   font-family: "poppins";
-  src: url(../../fonts/Poppins-Medium.ttf);
+  src: url(../fonts/Poppins-Medium.ttf);
 }
 @font-face {
   font-family: "roboto";
-  src: url(../../fonts/Roboto-Light.ttf);
+  src: url(../fonts/Roboto-Light.ttf);
 }
 * {
   margin: 0;
@@ -26,7 +26,7 @@
 }
 
 header {
-  background: url(../../assets/img/bg-vegan.jpg) center/cover;
+  background: url(../assets/img/bg-vegan.jpg) center/cover;
   height: 100vh;
 }
 header nav {
@@ -218,7 +218,7 @@ main .store .store-container div #chef {
   color: rgb(167, 167, 167);
 }
 main .store .store-img {
-  background: url(../../assets/img/dish-gallery-01.jpg) center/cover;
+  background: url(../assets/img/dish-gallery-01.jpg) center/cover;
 }
 @media screen and (max-width: 700px) {
   main .store .store-img {
