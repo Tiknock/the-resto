@@ -719,7 +719,6 @@ main .citation .citation-container p {
 }
 @media screen and (max-width: 420px) {
   main .citation .citation-container p {
-    width: 90%;
     font-size: 0.8rem;
   }
 }
