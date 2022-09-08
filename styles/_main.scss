@@ -488,16 +488,21 @@ main {
                 }
                 @media screen and(max-width: 420px) {
                     width: 90%;
-                    font-size: 0.9rem;
+                    font-size: 0.8rem;
                 }  
             }
             h3 {
                 padding: 30px;
                 font-family: $font3;
                 letter-spacing: 0.1rem;
+                @media screen and(max-width: 420px) {
+                    font-size: 0.8rem;
+                    padding: 20px;
+                }  
             }
             span {
                 color: $or;
+
             }
         }
     }

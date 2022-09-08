@@ -105,6 +105,11 @@ header .header-container h1 {
     font-size: 3rem;
   }
 }
+@media screen and (max-width: 340px) {
+  header .header-container h1 {
+    font-size: 2.5rem;
+  }
+}
 header .header-container img {
   padding: 40px;
 }
@@ -118,6 +123,11 @@ header .header-container p {
 @media screen and (max-width: 700px) {
   header .header-container p {
     width: 70%;
+  }
+}
+@media screen and (max-width: 370px) {
+  header .header-container p {
+    font-size: 0.8rem;
   }
 }
 @-webkit-keyframes animtitle {
@@ -709,13 +719,19 @@ main .citation .citation-container p {
 @media screen and (max-width: 420px) {
   main .citation .citation-container p {
     width: 90%;
-    font-size: 0.9rem;
+    font-size: 0.8rem;
   }
 }
 main .citation .citation-container h3 {
   padding: 30px;
   font-family: roboto, sans-serif;
   letter-spacing: 0.1rem;
+}
+@media screen and (max-width: 420px) {
+  main .citation .citation-container h3 {
+    font-size: 0.8rem;
+    padding: 20px;
+  }
 }
 main .citation .citation-container span {
   color: rgb(166, 114, 69);
@@ -759,6 +775,11 @@ footer .footer-container .resto p {
 footer .footer-container .footer-contact {
   padding: 40px 0px 40px 30px;
 }
+@media screen and (max-width: 420px) {
+  footer .footer-container .footer-contact {
+    padding: 40px 10px 40px 10px;
+  }
+}
 footer .footer-container .footer-contact h5 {
   font-size: 1.1rem;
   text-transform: uppercase;
@@ -769,7 +790,7 @@ footer .footer-container .footer-contact h5 {
 }
 @media screen and (max-width: 400px) {
   footer .footer-container .footer-contact h5 {
-    font-size: 1rem;
+    font-size: 0.9rem;
   }
 }
 footer .footer-container .footer-contact input {

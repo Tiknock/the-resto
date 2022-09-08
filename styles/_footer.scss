@@ -27,6 +27,9 @@ footer {
         }
         .footer-contact {
             padding: 40px 0px 40px 30px;
+            @media screen and(max-width: 420px) {
+            padding: 40px 10px 40px 10px;
+            }  
             h5 {
                 font-size: 1.1rem;
                 @include title;
@@ -34,7 +37,7 @@ footer {
                 padding: 10px;
                 font-family: $font3;
                 @media screen and(max-width: 400px) {
-                    font-size: 1rem;
+                    font-size: 0.9rem;
                 }  
             }
             input {
